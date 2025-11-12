@@ -13,9 +13,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-primary text-primary-foreground pt-12 sm:pt-16 pb-6 sm:pb-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-12">
           {/* Logo e Descrição */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
@@ -128,12 +128,12 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-primary-foreground/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-primary-foreground/60 text-sm text-center md:text-left">
+        <div className="border-t border-primary-foreground/20 pt-6 sm:pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0 gap-2">
+            <p className="text-primary-foreground/60 text-xs sm:text-sm text-center md:text-left">
               © {new Date().getFullYear()} CONNECTI SOLUCOES EM TECNOLOGIA. Todos os direitos reservados.
             </p>
-            <p className="text-primary-foreground/60 text-sm text-center md:text-right">
+            <p className="text-primary-foreground/60 text-xs sm:text-sm text-center md:text-right">
               CNPJ: 47.308.529/0001-30
             </p>
           </div>

@@ -34,16 +34,16 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Nossos serviços</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4">Nossos serviços</h2>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Soluções tecnológicas completas para o seu negócio
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
