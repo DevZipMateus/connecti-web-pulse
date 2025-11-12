@@ -1,5 +1,6 @@
 import { Target, Eye, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import teamImage from "@/assets/about-team.jpg";
 
 const About = () => {
   const values = [
@@ -19,6 +20,18 @@ const About = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Conheça nossa missão, visão e os valores que nos guiam
           </p>
+        </div>
+
+        {/* Team Image */}
+        <div className="mb-16 max-w-5xl mx-auto">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src={teamImage} 
+              alt="Equipe CONNECTI trabalhando em soluções tecnológicas" 
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
